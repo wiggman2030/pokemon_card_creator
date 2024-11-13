@@ -14,3 +14,262 @@ input, select, textarea, button {
     font: inherit;
 }
 
+/* structure styling */
+
+.main-container {
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.outer-card-container {
+    max-width: 472px;
+    padding: 1.1rem;
+    background-color: #eaf25c;
+    border-radius: 1.5rem;
+    border: 1px solid black;
+}
+
+.card-container {
+    color: #f7f9fb;
+    padding: 0rem 1rem;
+    border-radius: 0.5rem;
+    background-image: url('./images/PK_Textures/darkness_modern.png');
+    font-family: 'Roboto';
+}
+
+.picture-container {
+    border: 3px solid lightgrey;
+}
+
+.picture {
+    width: 100%;
+}
+
+/* element styling */
+
+.card-title-information {
+    display: inline-flex;
+    width: 100%;
+}
+
+#pokemon-level {
+    background-color: #d8d7d6;
+    border-radius: 0.4rem;
+    font-size: 0.9rem;
+    padding: 0.1rem 1rem;
+    border: 1px solid #64605f;
+    margin: 0.5rem;
+    position: absolute;
+    font-style: italic;
+    color: black;
+    left: 0.3rem;
+    font-weight: 900;
+}
+
+#card-name {
+    font-size: 1.75rem;
+    margin: 0.15rem 0rem 0.3rem 3.7rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+#pokemon-hp {
+    margin-left: auto;
+    margin-top: auto;
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+#hp-number {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.symbol-type {
+    position: relative;
+    left: 0.6rem;
+    top: 0.4rem;
+}
+
+.symbol-type img{
+    width: 1.8rem;
+}
+
+.pokemon-stats {
+    border: 3px solid white;
+    border-top: 0px;
+    border-radius: 0 0 0.5rem 0.5rem;
+    font-size: 0.6rem;
+    background-color: #d8d7d6;
+    color: black;
+    display: flex;
+    justify-content: space-around;
+    padding-right: 5rem;
+    padding-left: 5rem;
+}
+
+.move-container {
+    display: grid;
+    gap: 0.5rem;
+    padding: 1rem 0 1rem 0;
+    height: 15rem;
+}
+
+.move-1-container {
+    display: flex;
+}
+
+.move-1-cost {
+    width: 8.5rem;
+}
+
+.symbol-attack img{
+    width: 1.8rem;
+    margin-right: 0.15rem;
+}
+
+.move-1-name {
+    font-size: 1.6rem;
+}
+
+.move-1-damage {
+    margin-left: auto;
+    font-size: 1.6rem;
+}
+
+.move-2-container {
+    display: flex;
+}
+
+.move-2-cost {
+    width: 8.5rem;
+}
+
+.move-2-name {
+    font-size: 1.6rem;
+}
+
+.move-2-damage {
+    margin-left: auto;
+    font-size: 1.6rem;
+}
+
+.move-3-container {
+    display: flex;
+}
+
+.move-3-cost {
+    width: 8.5rem;
+}
+
+.move-3-name {
+    font-size: 1.6rem;
+}
+
+.move-3-damage {
+    margin-left: auto;
+    font-size: 1.6rem;
+}
+
+#symbol-retreat img{
+    width: 1.15rem;
+    margin-right: 0.15rem;
+}
+
+.card-costs {
+    display: flex;
+
+}
+
+.weakness {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    right: 1.85rem;
+    background-color: #d8d7d6;
+    border-radius: 0.4rem 0 0 0.4rem;
+    border-right: 1px solid ;
+    font-size: 0.8rem;
+    padding: 0.1rem 1rem;
+    border: 1px solid #64605f;
+    margin: 0.6rem;
+    color: black;
+    font-weight: 900;
+    max-width: 9.5rem;
+}
+
+.weakness-name {
+    margin-right: 0.5rem;
+}
+
+.resistance {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    right: 3rem;
+    background-color: #d8d7d6;
+    border-radius: 0 0.4rem 0.4rem 0;
+    border-right: 1px solid ;
+    font-size: 0.8rem;
+    padding: 0.1rem 1rem;
+    border: 1px solid #64605f;
+    margin: 0.6rem;
+    color: black;
+    font-weight: 900;
+    max-width: 9.5rem;
+}
+
+.retreat {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    left: 0.4rem;
+    margin: 0.6rem;
+    background-color: #d8d7d6;
+    border-radius: 0.4rem 0.4rem 0.4rem 0.4rem;
+    border-right: 1px solid ;
+    font-size: 0.8rem;
+    padding: 0.1rem 1rem;
+    border: 1px solid #64605f;
+    color: black;
+    margin-left: auto;
+    font-weight: 900;
+    min-width: 9.5rem;
+}
+
+.retreat-name {
+    margin-right: 0.5rem;
+}
+
+.card-details {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 0.5rem;
+}
+
+.illustration {
+    font-size: 0.675rem;
+    display: flex;
+}
+
+.card-details-right {
+    min-width: 9rem;
+}
+
+.pokemon-description {
+    font-size: 0.8rem;
+    text-align: left;
+}
+
+.card-number {
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.copyright-date {
+    font-size: 0.65rem;
+}
