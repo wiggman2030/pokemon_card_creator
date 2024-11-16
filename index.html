@@ -6,28 +6,95 @@
     <title>Pokemon Card Creator</title>
 
     <link rel="stylesheet" href="./style.css">
-    <link rel="script" href="./script.js">
-    <link rel="icon" href="./images/180px-Poke_Ball-299184507.png">
+    <link rel="icon" href="images/180px-Poke_Ball-299184507.png">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Slackey&display=swap" rel="stylesheet">
 
 </head>
 <body>
     
     <h1 class="title">Pokémon Card Creator</h1>
     <div class="main-container">
+        <div class="card-editor-left">
+            <h2 class="subtitle">Move Details</h2>
+            <div class="move-information-container">
+                <div class="details-subtitle">Move Information</div>
+                <div class="card-details-moves section">
+                    <label>Moves: </label>
+                    <input type="radio" id="one" name="moves" value="1" checked>
+                    <label for="one">One</label>
+                    <input type="radio" id="two" name="moves" value="2">
+                    <label for="two">Two</label>
+                    <input type="radio" id="three" name="moves" value="3">
+                    <label for="three">Three</label>
+                </div>
+
+                <div class="move1-details-container move-details" id="move1-section">
+                    <div class="move-subtitle">Move 1</div>
+                    <label for="move1">Move Name: </label><br>
+                    <input type="text" name="move1" id="move1"><br>
+                    <label for="move-cost">Move Cost: </label><br>
+                    <select name="move1-cost" id="move1-cost">
+                        <option value="one">One</option>
+                        <option value="two">Two</option>
+                        <option value="three">Three</option>
+                        <option value="four">Four</option>
+                        <option value="five">Five</option>
+                    </select><br>
+                    <label for="move1-damage">Move Damage Amount: </label><br>
+                    <input placeholder="50" step="10" type="number" name="move1-damage" id="move1-damage"><br>
+                    <label for="move-description">Move Description: </label><br>
+                    <textarea rows="4" cols="40" name="move1-description" id="move1-description"></textarea>
+                </div>
+
+                <div class="move2-details-container move-details" id="move2-section">
+                    <div class="move-subtitle">Move 2</div>
+                    <label for="move2">Move Name: </label><br>
+                    <input type="text" name="move2" id="move2"><br>
+                    <label for="move2-cost">Move Cost: </label><br>
+                    <select name="move2-cost" id="move2-cost">
+                        <option value="one">One</option>
+                        <option value="two">Two</option>
+                        <option value="three">Three</option>
+                        <option value="four">Four</option>
+                        <option value="five">Five</option>
+                    </select><br>
+                    <label for="move2-damage">Move Damage: </label><br>
+                    <input placeholder="50" step="10" type="number" name="move2-damage" id="move2-damage"><br>
+                    <label for="move2-description">Move Description: </label><br>
+                    <textarea rows="4" cols="40" name="move2-description" id="move2-description"></textarea>
+                </div>
+
+                <div class="move3-details-container move-details" id="move3-section">
+                    <div class="move-subtitle">Move 3</div>
+                    <label for="move3">Move Name: </label><br>
+                    <input type="text" name="move3" id="move3"><br>
+                    <label for="move3-cost">Move Cost: </label><br>
+                    <select name="move3-cost" id="move3-cost">
+                        <option value="one">One</option>
+                        <option value="two">Two</option>
+                        <option value="three">Three</option>
+                        <option value="four">Four</option>
+                        <option value="five">Five</option>
+                    </select><br>
+                    <label for="move3-damage">Move Damage: </label><br>
+                    <input placeholder="50" step="10" type="number" name="move3-damage" id="move3-damage"><br>
+                    <label for="move3-description">Move Description: </label><br>
+                    <textarea rows="4" cols="40" name="move3-description" id="move3-description"></textarea>
+                </div>
+            </div>
+        </div>
         <div class="card-preview">
             <h2 class="subtitle">Preview</h2>
             <div class="outer-card-container">
             <div class="card-container">
-
                 <div class="card-title-information">
                     <div id="pokemon-level">BASIC</div>
                     <div id="card-name">The Knight</div>
                     <div id="pokemon-hp">HP <span id="hp-number">80</span></div>
-                    <div class="symbol-type"><img src="./images/symbols/dark.webp" alt=""></div>
+                    <div class="symbol-type"><img id="pokemon-type" src="./images/symbols/dark.webp" alt=""></div>
                 </div>
 
                 <div class="picture-container"><img class="picture" src="./images/picture.jpg" alt=""></div>
@@ -37,15 +104,15 @@
                 </div>
 
                 <div class="move-container">
-                    <div class="move-1">
+                    <div id="move-1">
                         <div class="move-1-container">
-                            <div class="move-1-cost symbol-attack"><img src="./images/symbols/dark.webp" alt=""><img src="./images/symbols/dark.webp" alt=""><img src="./images/symbols/dark.webp" alt=""><img src="./images/symbols/dark.webp" alt=""></div>
+                            <div class="move-1-cost symbol-attack"><img src="./images/symbols/dark.webp" alt=""><img src="./images/symbols/dark.webp" alt=""></div>
                             <div class="move-1-name">Great Slash</div>
                             <div class="move-1-damage">60</div>
                         </div>
                         <div class="move-1-description"></div>
                     </div>
-                    <div class="move-2">
+                    <div id="move-2">
                         <div class="move-2-container">
                             <div class="move-2-cost symbol-attack"><img src="./images/symbols/dark.webp" alt=""><img src="./images/symbols/dark.webp" alt=""><img src="./images/symbols/colourless.png" alt=""></div>
                             <div class="move-2-name">Shade Cloak</div>
@@ -53,7 +120,7 @@
                         </div>
                         <div class="move-2-description">During your opponents next turn, prevent all effects of attacks, including damage, done to this pokémon. If 1 of your Pokémon used Shade Cloak during your last turn, this attack can't be used</div>
                     </div>
-                    <div class="move-3">
+                    <div id="move-3">
                         <div class="move-3-container">
                             <div class="move-3-cost symbol-attack"><img src="./images/symbols/dark.webp" alt=""><img src="./images/symbols/dark.webp" alt=""><img src="./images/symbols/colourless.png" alt=""><img src="./images/symbols/colourless.png" alt=""></div>
                             <div class="move-3-name">Vengeful Spirit</div>
@@ -97,151 +164,92 @@
                 </div>
             </div>
             </div>
+            <div class="save-button"><button id="save">SAVE</button></div>
         </div>
 
-        <div class="card-editor">
+        <div class="card-editor-right">
+            
             <h2 class="subtitle">Card Details</h2>
-
             <div class="details-container">
-                <form>
-                    <div class="card-details-name">
-                        <label for="name">Card Name: </label>
-                        <input type="text" name="name" id="name">
-                    </div>
+                    <div class="basic-information-container">
+                        <div class="details-subtitle">Basic Information</div>
+                        <div class="card-details-name section">
+                            <label for="name">Card Name: </label><br>
+                            <input type="text" maxlength="14" name="name" id="pokemon-name">
+                        </div>
 
-                    <div class="card-details-health">
-                        <label for="health">Health: </label>
-                        <input type="number" id="health" name="health">
-                    </div>
+                        <div class="card-details-health section">
+                            <label for="health">Health: </label><br>
+                            <input type="number" step="10" id="health"  name="health">
+                        </div>
 
-                    <div class="card-details-Type">
-                        <label for="type">Pokemon Type: </label>
-                        <select name="type" id="type">
-                            <option value="colourless">Colourless</option>
-                            <option value="dark">Dark</option>
-                            <option value="dragon">Dragon</option>
-                            <option value="fairy">Fairy</option>
-                            <option value="fighting">Fighting</option>
-                            <option value="fire">Fire</option>
-                            <option value="grass">Grass</option>
-                            <option value="lightning">Lightning</option>
-                            <option value="psychic">Psychic</option>
-                            <option value="water">Water</option>
-                        </select>
-                    </div>
+                        <div class="card-details-type section">
+                            <label for="type">Pokemon Type: </label><br>
+                            <select name="type" id="type">
+                                <option value="./images/symbols/colourless.png">Colourless</option>
+                                <option value="./images/symbols/dark.webp">Dark</option>
+                                <option value="dragon">Dragon</option>
+                                <option value="fairy">Fairy</option>
+                                <option value="fighting">Fighting</option>
+                                <option value="fire">Fire</option>
+                                <option value="grass">Grass</option>
+                                <option value="lightning">Lightning</option>
+                                <option value="psychic">Psychic</option>
+                                <option value="water">Water</option>
+                            </select>
+                        </div>
 
-                    <div class="card-details-moves">
-                        <label for="moves">Moves: </label>
-                        <input type="radio" id="one" name="moves" value="1" checked>
-                        <label for="one">One</label>
-                        <input type="radio" id="two" name="moves" value="2">
-                        <label for="two">Two</label>
-                        <input type="radio" id="three" name="moves" value="3">
-                        <label for="three">Three</label>
-                    </div>
+                        <div class="card-details-weakness section">
+                            <label for="weakness">Weakness: </label><br>
+                            <select name="weakness" id="weakness">
+                                <option value="colourless">Colourless</option>
+                                <option value="dark">Dark</option>
+                                <option value="dragon">Dragon</option>
+                                <option value="fairy">Fairy</option>
+                                <option value="fighting">Fighting</option>
+                                <option value="fire">Fire</option>
+                                <option value="grass">Grass</option>
+                                <option value="lightning">Lightning</option>
+                                <option value="psychic">Psychic</option>
+                                <option value="water">Water</option>
+                            </select>
+                        </div>
 
-                    <div class="move1-details-container">
-                        <label for="move1">Move Name: </label>
-                        <input type="text" name="move1" id="move1"><br>
-                        <label for="move1_cost">Move Cost: </label>
-                        <select name="move1_cost" id="move1_cost">
-                            <option value="one">One</option>
-                            <option value="two">Two</option>
-                            <option value="three">Three</option>
-                            <option value="four">Four</option>
-                            <option value="five">Five</option>
-                        </select><br>
-                        <label for="move1_damage">Move Damage: </label>
-                        <input type="number" name="move1_damage" id="move1_damage"><br>
-                        <label for="move1_description">Move Description</label>
-                        <textarea name="move1_description" id="move1_description"></textarea>
-                    </div>
+                        <div class="card-details-resistance section">
+                            <label for="resistance">Resistance: </label><br>
+                            <select name="resistance" id="resistance">
+                                <option value="colourless">Colourless</option>
+                                <option value="dark">Dark</option>
+                                <option value="dragon">Dragon</option>
+                                <option value="fairy">Fairy</option>
+                                <option value="fighting">Fighting</option>
+                                <option value="fire">Fire</option>
+                                <option value="grass">Grass</option>
+                                <option value="lightning">Lightning</option>
+                                <option value="psychic">Psychic</option>
+                                <option value="water">Water</option>
+                            </select>
+                        </div>
 
-                    <div class="move2-details-container">
-                        <label for="move2">Move Name: </label>
-                        <input type="text" name="move2" id="move2"><br>
-                        <label for="move2_cost">Move Cost: </label>
-                        <select name="move2_cost" id="move2_cost">
-                            <option value="one">One</option>
-                            <option value="two">Two</option>
-                            <option value="three">Three</option>
-                            <option value="four">Four</option>
-                            <option value="five">Five</option>
-                        </select><br>
-                        <label for="move2_damage">Move Damage: </label>
-                        <input type="number" name="move2_damage" id="move2_damage"><br>
-                        <label for="move2_description">Move Description</label>
-                        <textarea name="move2_description" id="move2_description"></textarea>
-                    </div>
+                        <div class="card-details-retreat section">
+                            <label for="retreat">Retreat Cost: </label><br>
+                            <select name="retreat" id="retreat">
+                                <option value="one">One</option>
+                                <option value="two">Two</option>
+                                <option value="three">Three</option>
+                                <option value="four">Four</option>
+                            </select>
+                        </div>
 
-                    <div class="move3-details-container">
-                        <label for="move3">Move Name: </label>
-                        <input type="text" name="move3" id="move3"><br>
-                        <label for="move3_cost">Move Cost: </label>
-                        <select name="move3_cost" id="move3_cost">
-                            <option value="one">One</option>
-                            <option value="two">Two</option>
-                            <option value="three">Three</option>
-                            <option value="four">Four</option>
-                            <option value="five">Five</option>
-                        </select><br>
-                        <label for="move3_damage">Move Damage: </label>
-                        <input type="number" name="move3_damage" id="move3_damage"><br>
-                        <label for="move3_description">Move Description</label>
-                        <textarea name="move3_description" id="move3_description"></textarea>
+                        <div class="card-details-description section">
+                            <label for="description">Pokemon Description: </label><br>
+                            <textarea rows="4" cols="40" name="description" id="description"></textarea>
+                        </div>
                     </div>
-
-                    <div class="card-details-weakness">
-                        <label for="weakness">Weakness: </label>
-                        <select name="weakness" id="weakness">
-                            <option value="colourless">Colourless</option>
-                            <option value="dark">Dark</option>
-                            <option value="dragon">Dragon</option>
-                            <option value="fairy">Fairy</option>
-                            <option value="fighting">Fighting</option>
-                            <option value="fire">Fire</option>
-                            <option value="grass">Grass</option>
-                            <option value="lightning">Lightning</option>
-                            <option value="psychic">Psychic</option>
-                            <option value="water">Water</option>
-                        </select>
-                    </div>
-
-                    <div class="card-details-resistance">
-                        <label for="resistance">Resistance: </label>
-                        <select name="resistance" id="resistance">
-                            <option value="colourless">Colourless</option>
-                            <option value="dark">Dark</option>
-                            <option value="dragon">Dragon</option>
-                            <option value="fairy">Fairy</option>
-                            <option value="fighting">Fighting</option>
-                            <option value="fire">Fire</option>
-                            <option value="grass">Grass</option>
-                            <option value="lightning">Lightning</option>
-                            <option value="psychic">Psychic</option>
-                            <option value="water">Water</option>
-                        </select>
-                    </div>
-
-                    <div class="card-details-retreat">
-                        <label for="retreat">Retreat Cost: </label>
-                        <select name="retreat" id="retreat">
-                            <option value="one">One</option>
-                            <option value="two">Two</option>
-                            <option value="three">Three</option>
-                            <option value="four">Four</option>
-                        </select>
-                    </div>
-
-                    <div class="card-details-description">
-                        <label for="description">Pokemon Descrition: </label>
-                        <textarea name="description" id="description"></textarea>
-                    </div>
-
-                    <input class="submit" type="submit">
-                </form>
             </div>
         </div>
     </div>
 </body>
+
+<script src="script.js"></script>
 </html>

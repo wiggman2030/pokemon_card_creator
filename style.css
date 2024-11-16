@@ -27,7 +27,6 @@ body {
     display: flex;
     margin: 0 auto;
     justify-content: center;
-    align-items: center;
 }
 
 .card-preview {
@@ -38,13 +37,14 @@ body {
     text-align: center;
     margin: 1rem;
     font-size: 3rem;
-    font-weight: 700;
+    font-family: 'Slackey';
 }
 
 .subtitle {
     text-align: center;
     margin-bottom: 0.5rem;
     font-size: 2rem;
+    font-family: 'Slackey';
 }
 
 .outer-card-container {
@@ -74,19 +74,56 @@ body {
 /* Card Details */
 
 .card-editor {
-    margin: 0 2rem;
+    margin-right: 2rem;
 }
 
-.details-container {
+.basic-information-container {
     background-color: white;
     border-radius: 1.2rem;
     padding: 2rem;
     border: 3px solid #64605f;
+    margin-bottom: 2rem;
+}
+
+.move-information-container {
+    background-color: white;
+    border-radius: 1.2rem;
+    padding: 2rem;
+    border: 3px solid #64605f;
+    margin-bottom: 2rem;
+}
+
+.section {
+    margin: 0.5rem 0;
+}
+
+label {
+    font-weight: 500;
 }
 
 /* element styling */
 
 /* Card Preview */
+
+.save-button {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+}
+
+button {
+    padding: 0.5rem 3rem;
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: rgba(99, 238, 6, 0.671);
+}
 
 .card-title-information {
     display: flex;
@@ -115,6 +152,8 @@ body {
     margin: 0.15rem 0rem 0.3rem 0rem;
     font-weight: 500;
     letter-spacing: 0.5px;
+    max-width: 12.6rem;
+    overflow: hidden;
 }
 
 #pokemon-hp {
@@ -132,7 +171,7 @@ body {
 .symbol-type {
     position: relative;
     left: 0.6rem;
-    top: 0.4rem;
+    top: 0.15rem;
 }
 
 .symbol-type img{
@@ -343,3 +382,63 @@ body {
 
 /* Card Details */
 
+.details-subtitle {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.move-subtitle {
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.section input{
+    margin-top: 0.25rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 0.3rem;
+}
+
+.card-details-health input {
+    max-width: 5rem;
+}
+
+.card-details-moves input{
+    margin: 0 0 0rem 0.5rem;
+}
+
+.move-details, textarea {
+    width: 100%;
+    margin-bottom: 0.5rem;
+    margin-top: 0.25rem;
+    border-radius: 0.3rem;
+}
+
+.move-details input, select {
+    margin: 0.25rem 0;
+    font-size: 1rem;
+    padding: 0.5rem;
+    font-weight: 500;
+    border-radius: 0.3rem;
+}
+
+#move1-damage {
+    width: 5rem;
+}
+
+#move2-damage {
+    width: 5rem;
+}
+
+#move3-damage {
+    width: 5rem;
+}
+
+.pokemon-description textarea {
+    width: 100%;
+    margin-bottom: 0.5rem;
+    margin-top: 0.25rem;
+}
