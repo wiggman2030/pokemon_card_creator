@@ -21,48 +21,43 @@
             <h2 class="subtitle">Move Details</h2>
             <div class="move-information-container">
                 <div class="details-subtitle">Move Information</div>
-                <label for="total-moves">Total Moves</label>
+                <label for="total-moves">Total Moves</label><br>
                 <select name="total-moves" id="total-moves">
                     <option value="one">One</option>
                     <option value="two">Two</option>
                     <option value="three">Three</option>
                 </select>
                 <div class="card-details-moves section">
-                    <span>Move: </span>
-                    <input type="radio" id="one" name="moves" value="1" checked>
+                    <span>Move: </span><br>
                     <label class="radio-label" for="one">One</label>
-                    <input type="radio" id="two" name="moves" value="2">
+                    <input type="radio" id="one" name="moves" value="1" checked>
                     <label class="radio-label" for="two">Two</label>
-                    <input type="radio" id="three" name="moves" value="3">
+                    <input type="radio" id="two" name="moves" value="2">
                     <label class="radio-label" for="three">Three</label>
+                    <input type="radio" id="three" name="moves" value="3">
                 </div>
 
                 <div class="move1-details-container move-details" id="move1-section">
                     <label for="move1">Move Name 1:</label><br>
-                    <input type="text" name="move1" id="move1"><br>
-                    <label for="move-cost">Move Cost: </label><br>
-                    <select name="move1-cost" id="move1-cost">
-                        <option value="one">One</option>
-                        <option value="two">Two</option>
-                        <option value="three">Three</option>
-                        <option value="four">Four</option>
-                        <option value="five">Five</option>
-                    </select><br>
-                    <div class="move-element-container">
-                        <label for="move1-element1">Move Element:</label><br>
-                        <select name="move1-element1" id="move-1-element">
-                            <option value="colourless">Colourless</option>
-                            <option value="dark">Dark</option>
-                            <option value="dragon">Dragon</option>
-                            <option value="fairy">Fairy</option>
-                            <option value="fighting">Fighting</option>
-                            <option value="fire">Fire</option>
-                            <option value="grass">Grass</option>
-                            <option value="lightning">Lightning</option>
-                            <option value="steel">Steel</option>
-                            <option value="psychic">Psychic</option>
-                            <option value="water">Water</option>
-                        </select>
+                    <input type="text" name="move1" id="move1-name"><br>
+                    <div class="move-element-container move-details">
+                        <label for="move1-element1" class="move-element">Move cost and element:</label>
+                        <div class="add-element">
+                            <select name="move1-element1" class="move-element" id="move1-element">
+                                <option value="colourless">Colourless</option>
+                                <option value="dark">Dark</option>
+                                <option value="fairy">Fairy</option>
+                                <option value="fighting">Fighting</option>
+                                <option value="fire">Fire</option>
+                                <option value="grass">Grass</option>
+                                <option value="lightning">Lightning</option>
+                                <option value="steel">Steel</option>
+                                <option value="psychic">Psychic</option>
+                                <option value="water">Water</option>
+                            </select>
+                            <button class="add-element-btn">+</button>
+                            <button class="minus-element-btn">-</button>
+                        </div>
                     </div>
                     <label for="move1-damage">Move Damage: </label><br>
                     <input placeholder="50" step="10" type="number" name="move1-damage" id="move1-damage"><br>
@@ -72,29 +67,26 @@
 
                 <div class="move2-details-container move-details" id="move2-section">
                     <label for="move2">Move Name 2: </label><br>
-                    <input type="text" name="move2" id="move2"><br>
-                    <label for="move2-cost">Move Cost: </label><br>
-                    <select name="move2-cost" id="move2-cost">
-                        <option value="one">One</option>
-                        <option value="two">Two</option>
-                        <option value="three">Three</option>
-                        <option value="four">Four</option>
-                        <option value="five">Five</option>
-                    </select><br>
-                    <label for="move1-element">Move Element</label><br>
-                    <select name="move1-element" id="move-1-element">
-                        <option value="colourless">Colourless</option>
-                        <option value="dark">Dark</option>
-                        <option value="dragon">Dragon</option>
-                        <option value="fairy">Fairy</option>
-                        <option value="fighting">Fighting</option>
-                        <option value="fire">Fire</option>
-                        <option value="grass">Grass</option>
-                        <option value="lightning">Lightning</option>
-                        <option value="steel">Steel</option>
-                        <option value="psychic">Psychic</option>
-                        <option value="water">Water</option>
-                    </select><br>
+                    <input type="text" name="move2" id="move2-name"><br>
+                    <div class="move-element-container move-details">
+                        <label for="move2-element">Move cost and element:</label>
+                        <div class="add-element">
+                            <select name="move2-element" id="move2-element">
+                                <option value="colourless">Colourless</option>
+                                <option value="dark">Dark</option>
+                                <option value="fairy">Fairy</option>
+                                <option value="fighting">Fighting</option>
+                                <option value="fire">Fire</option>
+                                <option value="grass">Grass</option>
+                                <option value="lightning">Lightning</option>
+                                <option value="steel">Steel</option>
+                                <option value="psychic">Psychic</option>
+                                <option value="water">Water</option>
+                            </select>
+                            <button class="add-element-btn">+</button>
+                            <button class="minus-element-btn">-</button>
+                        </div>
+                    </div>
                     <label for="move2-damage">Move Damage: </label><br>
                     <input placeholder="50" step="10" type="number" name="move2-damage" id="move2-damage"><br>
                     <label for="move2-description">Move Description: </label><br>
@@ -103,29 +95,26 @@
             
                 <div class="move3-details-container move-details" id="move3-section">
                     <label for="move3">Move Name 3:</label><br>
-                    <input type="text" name="move3" id="move3"><br>
-                    <label for="move3-cost">Move Cost: </label><br>
-                    <select name="move3-cost" id="move3-cost">
-                        <option value="one">One</option>
-                        <option value="two">Two</option>
-                        <option value="three">Three</option>
-                        <option value="four">Four</option>
-                        <option value="five">Five</option>
-                    </select><br>
-                    <label for="move1-element">Move Element</label><br>
-                    <select name="move1-element" id="move-1-element">
-                        <option value="colourless">Colourless</option>
-                        <option value="dark">Dark</option>
-                        <option value="dragon">Dragon</option>
-                        <option value="fairy">Fairy</option>
-                        <option value="fighting">Fighting</option>
-                        <option value="fire">Fire</option>
-                        <option value="grass">Grass</option>
-                        <option value="lightning">Lightning</option>
-                        <option value="steel">Steel</option>
-                        <option value="psychic">Psychic</option>
-                        <option value="water">Water</option>
-                    </select><br>
+                    <input type="text" name="move3" id="move3-name"><br>
+                    <div class="move-element-container move-details">
+                        <label for="move3-element">Move cost and element:</label>
+                        <div class="add-element">
+                            <select name="move3-element" id="move3-element">
+                                <option value="colourless">Colourless</option>
+                                <option value="dark">Dark</option>
+                                <option value="fairy">Fairy</option>
+                                <option value="fighting">Fighting</option>
+                                <option value="fire">Fire</option>
+                                <option value="grass">Grass</option>
+                                <option value="lightning">Lightning</option>
+                                <option value="steel">Steel</option>
+                                <option value="psychic">Psychic</option>
+                                <option value="water">Water</option>
+                            </select>
+                            <button class="add-element-btn">+</button>
+                            <button class="minus-element-btn">-</button>
+                        </div>
+                    </div>
                     <label for="move3-damage">Move Damage: </label><br>
                     <input placeholder="50" step="10" type="number" name="move3-damage" id="move3-damage"><br>
                     <label for="move3-description">Move Description: </label><br>
@@ -141,19 +130,19 @@
                     <div id="pokemon-level">BASIC</div>
                     <div id="card-name">The Knight</div>
                     <div id="pokemon-hp">HP <span id="hp-number">80</span></div>
-                    <div class="symbol-type"><img id="pokemon-type" src="./images/symbols/dark.webp" alt=""></div>
+                    <div class="symbol-type"><img id="pokemon-type" src="./images/symbols/dark.png" alt=""></div>
                 </div>
 
-                <div class="picture-container"><img class="picture" src="./images/picture2.jpg" alt=""></div>
+                <div class="picture-container"><img class="picture" src="./images/picture.jpg" alt=""></div>
                 
                 <div class="pokemon-stats">
-                    <span class="stat-info">NO. 666</span><span class="stat-info">shade bug pokémon</span><span class="stat-info">HT: 0'0.17"</span><span class="stat-info">WT: 0lbs.</span>
+                    <span class="stat-info">NO. 666</span><span class="stat-info">God bug Pokémon</span><span class="stat-info">HT: 0'1"</span><span class="stat-info">WT: 0lbs.</span>
                 </div>
 
                 <div class="move-container">
                     <div id="move-1">
                         <div class="move-1-container">
-                            <div class="move-1-cost symbol-attack"><img src="./images/symbols/colourless.png" alt=""></div>
+                            <div class="move-1-cost symbol-attack"></div>
                             <div class="move-1-name">Gummy bite</div>
                             <div class="move-1-damage">10</div>
                         </div>
@@ -161,26 +150,26 @@
                     </div>
                     <div id="move-2">
                         <div class="move-2-container">
-                            <div class="move-2-cost symbol-attack"><img src="./images/symbols/colourless.png" alt=""><img src="./images/symbols/colourless.png" alt=""><img src="./images/symbols/colourless.png" alt=""></div>
+                            <div class="move-2-cost symbol-attack"></div>
                             <div class="move-2-name">Reckless charge</div>
                             <div class="move-2-damage">30</div>
                         </div>
-                        <div class="move-2-description">Flip a coin, if heads, this attack does 20 more damage</div>
+                        <div class="move-2-description" id="move-2-description">Flip a coin, if heads, this attack does 20 more damage</div>
                     </div>
                     <div id="move-3">
                         <div class="move-3-container">
-                            <div class="move-3-cost symbol-attack"><img src="./images/symbols/colourless.png" alt=""><img src="./images/symbols/colourless.png" alt=""><img src="./images/symbols/colourless.png" alt=""></div>
+                            <div class="move-3-cost symbol-attack"></div>
                             <div class="move-3-name">Cute stare</div>
                             <div class="move-3-damage">10</div>
                         </div>
-                        <div class="move-3-description">The opponents active pokemon is confused</div>
+                        <div class="move-3-description" id="move-3-description">The opponents active pokemon is confused</div>
                     </div>
                 </div>
 
                 <div class="card-costs">
                     <div class="weakness">
                         <div class="weakness-name">weakness</div>
-                        <div class="weakness-symbol"><img id="symbol-weakness" src="./images/symbols/dark.webp" alt=""></div>
+                        <div class="weakness-symbol"><img id="symbol-weakness" src="./images/symbols/dark.png" alt=""></div>
                         <div class="weakness-multiplier">x2</div>
                     </div>
                     <div class="resistance">
@@ -221,17 +210,17 @@
                     <div class="basic-information-container">
                         <div class="details-subtitle">Basic Information</div>
                         <div class="card-details-name section">
-                            <label for="name">Card Name: </label><br>
-                            <input type="text" maxlength="14" name="name" id="pokemon-name">
+                            <label for="name">Card Name:</label><br>
+                            <input type="text" maxlength="20" name="name" id="pokemon-name">
                         </div>
 
                         <div class="card-details-health section">
-                            <label for="health">Health: </label><br>
-                            <input type="number" step="10" id="health"  name="health">
+                            <label for="health">Health:</label><br>
+                            <input type="number" step="10" min="10" max="990" id="health" maxlength="3" name="health">
                         </div>
 
                         <div class="card-details-type section">
-                            <label for="type">Pokemon Type: </label><br>
+                            <label for="type">Pokemon Type:</label><br>
                             <select name="type" id="type">
                                 <option value="colourless">Colourless</option>
                                 <option value="dark">Dark</option>
@@ -248,11 +237,9 @@
                         </div>
 
                         <div class="card-details-weakness section">
-                            <label for="weakness">Weakness: </label><br>
+                            <label for="weakness">Weakness:</label><br>
                             <select name="weakness" id="weakness">
-                                <option value="colourless">Colourless</option>
                                 <option value="dark">Dark</option>
-                                <option value="dragon">Dragon</option>
                                 <option value="fairy">Fairy</option>
                                 <option value="fighting">Fighting</option>
                                 <option value="fire">Fire</option>
@@ -265,12 +252,11 @@
                         </div>
 
                         <div class="card-details-resistance section">
-                            <label for="resistance">Resistance: </label><br>
+                            <label for="resistance">Resistance:</label><br>
                             <select name="resistance" id="resistance">
                                 <option value="none">None</option>
                                 <option value="colourless">Colourless</option>
                                 <option value="dark">Dark</option>
-                                <option value="dragon">Dragon</option>
                                 <option value="fairy">Fairy</option>
                                 <option value="fighting">Fighting</option>
                                 <option value="fire">Fire</option>
@@ -283,7 +269,7 @@
                         </div>
 
                         <div class="card-details-retreat section">
-                            <label for="retreat">Retreat Cost: </label><br>
+                            <label for="retreat">Retreat Cost:</label><br>
                             <select name="retreat" id="retreat">
                                 <option value="none">None</option>
                                 <option value="one">One</option>
@@ -294,7 +280,7 @@
                         </div>
 
                         <div class="card-details-description section">
-                            <label for="description">Pokemon Description: </label><br>
+                            <label for="description">Pokemon Description:</label><br>
                             <textarea rows="4" maxlength="120" cols="40" name="description" id="description"></textarea>
                         </div>
                     </div>
